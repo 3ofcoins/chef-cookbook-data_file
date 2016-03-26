@@ -1,0 +1,7 @@
+name 'data_file'
+maintainer 'Maciej Pasternacki'
+maintainer_email 'maciej@pasternacki.net'
+license 'MIT'
+description 'Resources to create JSON and YAML files'
+long_description 'Resources to create JSON and YAML files'
+version '0.1.0'

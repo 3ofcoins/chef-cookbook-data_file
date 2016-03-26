@@ -1,0 +1,6 @@
+AllCops:
+  Exclude:
+    - tmp/**/*
+
+Style/Documentation:
+  Enabled: false

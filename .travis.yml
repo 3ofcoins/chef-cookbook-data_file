@@ -1,0 +1,14 @@
+# Use Travis's cointainer based infrastructure
+sudo: false
+addons:
+  apt:
+    sources:
+      - chef-stable-precise
+    packages:
+      - chefdk
+
+before_script:
+  - /opt/chefdk/embedded/bin/chef gem install kitchen-docker
+      
+# install: echo "skip bundle install"
+script: ./test/harness.sh

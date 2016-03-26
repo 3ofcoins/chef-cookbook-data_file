@@ -1,0 +1,9 @@
+default['data_file_test']['data']['hash']['foo'] = 1
+default['data_file_test']['data']['hash']['bar'] = [2, 'welp', nil]
+default['data_file_test']['data']['hash']['baz']['nested'] = false
+default['data_file_test']['data']['number'] = 42
+# default['data_file_test']['data']['nil'] = nil
+default['data_file_test']['data']['true'] = true
+default['data_file_test']['data']['false'] = false
+default['data_file_test']['data']['string'] = 'barney'
+default['data_file_test']['data']['array'] = [4, 8, 15, 16, 42, 24]
