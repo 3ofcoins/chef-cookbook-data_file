@@ -5,5 +5,5 @@ source 'https://supermarket.chef.io'
 metadata
 
 group :integration do
-  cookbook 'json_file_test', path: 'test/cookbooks/json_file_test'
+  cookbook 'data_file_test', path: 'test/cookbooks/data_file_test'
 end
