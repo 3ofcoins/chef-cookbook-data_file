@@ -2,6 +2,8 @@ Data File Cookbook
 ==================
 
 [![Build Status](https://travis-ci.org/3ofcoins/chef-cookbook-data_file.svg?branch=master)](https://travis-ci.org/3ofcoins/chef-cookbook-data_file)
+[![Chef Supermarket](https://img.shields.io/cookbook/v/data_file.svg)](https://supermarket.chef.io/cookbooks/data_file)
+[![GitHub Issues](https://img.shields.io/github/issues/3ofcoins/chef-cookbook-data_file.svg)](https://github.com/3ofcoins/chef-cookbook-data_file/issues)
 
 This is a library [Chef](https://www.chef.io/) cookbook that provides
 resources to create data files in JSON and YAML format.
