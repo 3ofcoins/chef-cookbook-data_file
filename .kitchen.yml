@@ -18,5 +18,5 @@ platforms:
 suites:
   - name: default
     run_list:
-      - recipe[json_file_test::default]
+      - recipe[data_file_test::default]
     attributes:
