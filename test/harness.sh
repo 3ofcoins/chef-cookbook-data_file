@@ -12,4 +12,4 @@ foodcritic --version
 foodcritic .
 
 kitchen --version
-kitchen spec
+kitchen test
