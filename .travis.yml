@@ -1,5 +1,6 @@
-# Use Travis's cointainer based infrastructure
-sudo: false
+sudo: required
+services:
+  - docker
 addons:
   apt:
     sources:
