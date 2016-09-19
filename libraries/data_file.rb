@@ -38,7 +38,7 @@ module DataFileCookbook
 
     property :data, Object,
              respond_to: :to_json,
-             coerce: ->(obj) { Chef::JSONCompat.parse(Chef::JSONCompat.to_json(obj)) } # rubocop:disable Metrics/LineLength
+             coerce: ->(obj) { parse_data(serialize_data(obj)) } # rubocop:disable Metrics/LineLength
     property :pretty, [true, false], default: false, desired_state: false
 
     # TODO: property :ignore_parse_error, [true, false],
@@ -50,12 +50,16 @@ module DataFileCookbook
       data(Chef::JSONCompat.parse(str))
     end
 
-    def content
+    def serialize_data(obj)
       if pretty
-        Chef::JSONCompat.to_json_pretty(data)
+        Chef::JSONCompat.to_json_pretty(obj)
       else
-        Chef::JSONCompat.to_json(data)
+        Chef::JSONCompat.to_json(obj)
       end
+    end
+
+    def content
+      serialize_data(data)
     end
   end
 
@@ -69,8 +73,8 @@ module DataFileCookbook
       YAML.load(str)
     end
 
-    def content
-      YAML.dump(data)
+    def serialize_data(obj)
+      YAML.dump(obj)
     end
   end
 end
