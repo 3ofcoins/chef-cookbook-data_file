@@ -1,5 +1,5 @@
 name 'data_file'
-version '0.1.1'
+version '0.1.2'
 maintainer 'Maciej Pasternacki'
 maintainer_email 'maciej@3ofcoins.net'
 license 'MIT'

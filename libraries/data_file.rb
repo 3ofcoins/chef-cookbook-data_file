@@ -29,7 +29,7 @@ module DataFileCookbook
 
     def load_resource_attributes_from_file(resource)
       super
-      resource.parse_data(file_class.read(resource.path))
+      resource.data(resource.parse_data(file_class.read(resource.path)))
     end
   end
 
@@ -47,7 +47,7 @@ module DataFileCookbook
     allowed_actions.delete(:touch)
 
     def parse_data(str)
-      data(Chef::JSONCompat.parse(str))
+      Chef::JSONCompat.parse(str)
     end
 
     def serialize_data(obj)

@@ -1,6 +1,13 @@
 Change Log
 ==========
 
+Version 0.1.2 (2016-10-06)
+--------------------------
+
+Fix a dumb bug in `json_file` that was causing infinite recursion.
+
+Fix kitchen test.
+
 Version 0.1.1 (2016-09-19)
 --------------------------
 
